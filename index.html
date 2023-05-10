@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RecipeRat</title>
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Link to font-family -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Link FontAwesome -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bg">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <a href="https://utilityonthego.netlify.app/" class="navbar-brand mb-1 h1">
+          Home
+        </a>
+        <a href="index.html" class="navbar-brand mb-0 h1">
+          Health Tracker
+        </a>
+    </nav>
+    <header>RecipeRat <img src="rat-logo.png" style="padding-left: 3px; padding-bottom: 1px; width: 40px; height: 40px;" alt="Rat chief"/></header>
+    
+    <div class="container">
+
+    <!-- This form will be where users input data about the recipes -->
+    <form>
+        <div class="form-group row">
+          <label for="keywordInput"></label>
+          <input type="text" class="form-control col-md-10 ml-3" id="keywordInput" placeholder="Search for a dish">
+      <!-- AJAX call -->
+        <button type="button" id="findRecipe" value="submit" class="btn btn-dark col-md-1 ml-2">Submit</button>
+        </div>
+        <section class="jumbotron row" id="recipe-results">
+            <div class="col-md-12" id="welcome-title">
+                <h1>Welcome to RecipeRat!</h1>
+                <br/>
+                <h2> Here's a List of our Popular Recipes</h2>
+                <h2>-Japanese Rice</h2>
+                    <h2>-Chicken Handi</h2>
+                    <h2>-Fish Pie</h2>
+                    <h2>-Beef Asado</h2>
+                    <h2>-Breakfast Potatoes</h2>
+                    <h2>-Red Peas Soup</h2>
+            </div>
+            <div class="col-md-12" id="recipe-title"></div>
+            <div class="col-md-6 p-5 pb-0 h-50" id="ingredient-list"></div>
+            <div class="col-md-5 p-5 pb-0" id="dish-image"></div>
+            <div class="col-md-12" id="exercise-chart"></div>
+    </section>
+    </form>
+    </div>
+
+    <!-- We'll be dumping our JSON contents in here -->
+
+
+
+
+    <!-- Results Shell -->
+    
+
+    <!-- Chart Function Check -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
